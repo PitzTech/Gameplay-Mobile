@@ -1,0 +1,58 @@
+{
+	"env": {
+		"es2021": true,
+		"jest": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"@react-native-community",
+		"prettier",
+		"plugin:prettier/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+	"rules": {
+		"indent": ["warn", "tab"],
+		"linebreak-style": ["error", "unix"],
+		"quotes": ["error", "double", { "allowTemplateLiterals": true }],
+		"semi": ["warn", "never"],
+		"object-curly-spacing": ["error", "always"],
+		"no-empty-function": "off",
+		"@typescript-eslint/no-empty-function": ["warn"],
+		"curly": ["warn", "multi-or-nest"],
+		"no-empty-pattern": "off",
+		"@typescript-eslint/explicit-function-return-type": [
+			"error",
+			{
+				"allowExpressions": true
+			}
+		],
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "warn",
+		"react/prop-types": ["warn", { "ignore": ["children"] }],
+		//"react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+		"prettier/prettier": [
+			"warn",
+			{
+				"trailingComma": "none",
+				"tabWidth": 3,
+				"useTabs": true,
+				"semi": false,
+				"arrowParens": "avoid",
+				"jsxBracketSameLine": false,
+				"printWidth": 90
+				//"bracketSpacing": false
+			}
+		]
+		//"import/prefer-default-export": "off" not-needed anymore
+	}
+}
