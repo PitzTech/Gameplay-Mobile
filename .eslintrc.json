@@ -21,6 +21,7 @@
 	},
 	"plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
 	"rules": {
+		"no-unused-vars": ["warn"],
 		"indent": ["warn", "tab"],
 		"linebreak-style": ["error", "unix"],
 		"quotes": ["error", "double", { "allowTemplateLiterals": true }],
