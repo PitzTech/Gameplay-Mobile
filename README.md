@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="GamePlay" title="GamePlay" src=".github/logo.sg" />
+  <img alt="GamePlay" title="GamePlay" src=".github/logo.svg" />
 </h1>
 <blockquote align="center">“Sucesso não é o resultado de um jogo, mas o destino de uma jornada”!</blockquote>
 <br>
