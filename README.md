@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="GamePlay" title="GamePlay" src=".github/logo.svg" />
+  <img alt="GamePlay" title="GamePlay" src=".github/logo.png" />
 </h1>
 <blockquote align="center">“Sucesso não é o resultado de um jogo, mas o destino de uma jornada”!</blockquote>
 <br>
@@ -8,29 +8,64 @@
   <img alt="GamePlay" src=".github/screenshot.png" width="100%">
 </p>
 
+## 💻 Projeto
+Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jogar com os amigos. Crie grupos para jogar seus games favoritos com seus amigos com esse App que possui autenticação com Discord.
+
+## :hammer_and_wrench: Features
+
+-   [ ] Autenticação Social OAuth2 com servidor do Discord.
+-   [ ] Obtém perfil do usuário cadastro no Discord (username e avatar);
+-   [ ] Lista os servidores do Discord que o usuário faz parte;
+-   [ ] Permite realizar o agendamento de partidas;
+-   [ ] Permite filtrar as partidas por categoria;
+-   [ ] Exibe se a partida foi agendada em um servidor próprio (anfitrião) ou em servidores de outros (convidado);
+-   [ ] Compartilha o convite para ingressar no servidor do usuário;
+-   [ ] Permite redirecionar o usuário para o seu próprio servidor;
+-   [ ] Disponibiliza a função de Logout.
+
+
 ## ✨ Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
--  [React Native](https://reactnative.dev/)
--  [Typescript](https://www.typescriptlang.org/)
--  [Expo](https://expo.io/)
-
-## 💻 Projeto
-
-Aplicativo para lhe ajudar a crie grupos para jogar seus games favoritos com seus amigos.
+-   [ ] React Native
+-   [ ] Typescript
+-   [ ] Expo
+-   [ ] Context API
+-   [ ] Async Storage
+-   [ ] Vector Icons
+-   [ ] React Native Svg e Svg Transform
+-   [ ] Axios
+-   [ ] Gradient colors
+-   [ ] OAuth2 Discord
+-   [ ] Expo Google Fonts
+-   [ ] React Navigation Stack
+-   [ ] React Native Gesture Handler
+-   [ ] Expo Authentication
+-   [ ] React Native Share
+-   [ ] Deep Link
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/IhQRtrOZdu3TrvkPYREzOy/PlantManager/duplicate). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/0kv33XYjvOgvKGKHBaiR07/GamePlay-NLW-Together?node-id=58913%3A83). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
 
-## 🚀 Como executar
 
--  Clone o repositório
--  Instale as dependências com `yarn`
--  Inicie seu app com `expo start`
--  Inicie a fake api com `npx json-server --watch ./src/services/server.json -p 3333 --delay 700`. Substitua o host pelo seu endereço IP local. Faça o mesmo no arquivo API dentro de services.
-- Inicie a ponte o servidor `npx ngrok http 3333` e coloque o endereço criado na propriedade `baseUrl` do arquivo [/src/services/api.ts](/src/services/api.ts)
+## 🚀 Executando o projeto
+
+Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
+Em seguida, inicie o projeto.
+
+```cl
+expo start
+```
+
+Lembre-se de criar o seu App no servidor do Discord para obter as credencias de autenticação. Em seguida, defina no arquivo .env as configurações do seu App (remova o example do arquivo .env.example).
+
+ ```cl
+REDIRECT_URI=
+SCOPE=
+RESPONSE_TYPE=
+CLIENT_ID=
+CDN_IMAGE=
+```
 
 ## 📄 Licença
 
